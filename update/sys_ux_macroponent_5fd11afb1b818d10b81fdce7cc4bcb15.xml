@@ -1638,7 +1638,95 @@
               "value" : true
             }
           },
-          "eventMappings" : [ ],
+          "eventMappings" : [ {
+            "eventMappingId" : "clkqgarlcaacchlddbbqqopbbcevz",
+            "isConfiguration" : false,
+            "offRowStorageId" : null,
+            "sourceEventApiName" : "now_vis_extensions.NOW_VIS_WRAPPER#CLICKED",
+            "sourceEventCorrelationId" : null,
+            "sourceEventDefinition" : {
+              "apiName" : "now_vis_extensions.NOW_VIS_WRAPPER#CLICKED",
+              "id" : null,
+              "type" : "UXEVENT"
+            },
+            "sourceEventSysId" : null,
+            "targets" : [ {
+              "broker" : null,
+              "clientScript" : null,
+              "conditional" : null,
+              "declarativeAction" : null,
+              "event" : {
+                "apiName" : "x_58872_needit.NAV_ITEM_SELECTED_RELAY_5fd11afb1b818d10b81fdce7cc4bcb15",
+                "payload" : {
+                  "type" : "MAP_CONTAINER",
+                  "container" : {
+                    "route" : {
+                      "type" : "JSON_LITERAL",
+                      "value" : "simple-list"
+                    },
+                    "fields" : {
+                      "type" : "MAP_CONTAINER",
+                      "container" : {
+                        "table" : {
+                          "type" : "EVENT_PAYLOAD_BINDING",
+                          "binding" : {
+                            "address" : [ "params", "table" ]
+                          }
+                        }
+                      }
+                    },
+                    "params" : {
+                      "type" : "MAP_CONTAINER",
+                      "container" : {
+                        "listTitle" : {
+                          "type" : "JSON_LITERAL",
+                          "value" : "NeedIts Needed This Month"
+                        },
+                        "query" : {
+                          "type" : "EVENT_PAYLOAD_BINDING",
+                          "binding" : {
+                            "address" : [ "params", "query" ]
+                          }
+                        },
+                        "listView" : {
+                          "type" : "JSON_LITERAL",
+                          "value" : null
+                        }
+                      }
+                    },
+                    "redirect" : {
+                      "type" : "JSON_LITERAL",
+                      "value" : null
+                    },
+                    "passiveNavigation" : {
+                      "type" : "JSON_LITERAL",
+                      "value" : null
+                    },
+                    "title" : {
+                      "type" : "JSON_LITERAL",
+                      "value" : null
+                    },
+                    "multiInstField" : {
+                      "type" : "JSON_LITERAL",
+                      "value" : null
+                    },
+                    "targetRoute" : {
+                      "type" : "JSON_LITERAL",
+                      "value" : null
+                    },
+                    "external" : {
+                      "type" : "JSON_LITERAL",
+                      "value" : null
+                    }
+                  }
+                },
+                "sysId" : "270edb7b1b458d10b81fdce7cc4bcbea"
+              },
+              "operation" : null,
+              "targetId" : "clkqgarlcaacchmddbbqffnshhioqee",
+              "type" : "EVENT"
+            } ]
+          } ],
           "slot" : null,
           "definition" : {
             "id" : "d24d53f60350de7a652caf3188a46ed2",
@@ -1659,7 +1747,7 @@
           "default" : {
             "children" : null,
             "isInline" : null,
-            "items" : [{"element_id":"overdue_needits_score","styles":{"height":null,"width":"30%","margin":"var(--now-static-space--lg)","background":"rgb(var(--now-color--neutral-0))"}},{"element_id":"request_type_pie","styles":{"height":"250px","width":"30%","margin":"var(--now-static-space--lg)","background":"rgb(var(--now-color--neutral-0))"}},{"element_id":"this_months_needits","styles":{"height":"250px","margin":"var(--now-static-space--lg)","background":"rgb(var(--now-color--neutral-0))"}}],
+            "items" : [{"element_id":"overdue_needits_score","styles":{"height":null,"width":"30%","margin":"var(--now-static-space--lg)","background":"rgb(var(--now-color--neutral-0))"}},{"element_id":"request_type_pie","styles":{"height":"250px","width":"30%","margin":"var(--now-static-space--lg)","background":"rgb(var(--now-color--neutral-0))"}},{"element_id":"this_months_needits","styles":{"height":null,"margin":"var(--now-static-space--lg)","background":"rgb(var(--now-color--neutral-0))"}}],
             "root" : null,
             "rules" : null,
             "styles" : {"flex-direction":"row"},
@@ -2338,14 +2426,14 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2022-01-21 15:00:21</sys_created_on>
         <sys_id>5fd11afb1b818d10b81fdce7cc4bcb15</sys_id>
-        <sys_mod_count>29</sys_mod_count>
+        <sys_mod_count>33</sys_mod_count>
         <sys_name>Home</sys_name>
         <sys_package display_value="NeedIt" source="x_58872_needit">6ead8e780f603200cd674f8ce1050ed1</sys_package>
         <sys_policy/>
         <sys_scope display_value="NeedIt">6ead8e780f603200cd674f8ce1050ed1</sys_scope>
         <sys_update_name>sys_ux_macroponent_5fd11afb1b818d10b81fdce7cc4bcb15</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2023-07-22 14:51:32</sys_updated_on>
+        <sys_updated_on>2023-07-31 05:55:26</sys_updated_on>
     </sys_ux_macroponent>
     <sys_translated_text action="delete_multiple" query="documentkey=5fd11afb1b818d10b81fdce7cc4bcb15"/>
 </record_update>
